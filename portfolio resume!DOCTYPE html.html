@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terence Njemfoa | IT & Cloud Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #232f3e; /* AWS Dark Blue */
+            --secondary-color: #ff9900; /* AWS Orange */
+            --text-color: #333;
+            --bg-light: #f4f4f9;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+            border-bottom: 4px solid var(--secondary-color);
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid var(--secondary-color);
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a, .contact-info span {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        nav {
+            background: #fff;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: var(--primary-color);
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: var(--white);
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 0;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skill-category li {
+            padding: 5px 0;
+            font-size: 0.95rem;
+        }
+
+        .job, .edu {
+            margin-bottom: 25px;
+        }
+
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #444;
+        }
+
+        .company {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+
+        .date {
+            color: #777;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .impact-box {
+            background: #fff8e1;
+            border-left: 5px solid var(--secondary-color);
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .impact-box ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: var(--primary-color);
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .job-header {
+                flex-direction: column;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://drive.google.com/thumbnail?id=1HmfszYmzuA33wiqrE1kkH_OFvnQdOmaN&sz=w300" alt="Terence Njemfoa" class="profile-img">
+    <h1>Terence Njemfoa [cite: 1]</h1>
+    <p>Cloud Practitioner | IT Professional | Former Educator [cite: 5, 6]</p>
+    <div class="contact-info">
+        <span>📍 Milford, Massachusetts [cite: 2]</span>
+        <a href="mailto:njemfoa@gmail.com">✉️ njemfoa@gmail.com [cite: 3]</a>
+        <a href="tel:+17746869874">📞 (774) 686-9874 [cite: 3]</a>
+        <a href="https://www.linkedin.com/in/terencenjemfoa" target="_blank">🔗 LinkedIn Profile [cite: 3]</a>
+    </div>
+</header>
+
+<nav>
+    <a href="#summary">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+</nav>
+
+<div class="container">
+    
+    <section id="summary">
+        <h2>Professional Summary [cite: 4]</h2>
+        <p>
+            Dedicated Math teacher transitioning into IT, with over 8 years of experience supporting student success and strong outcomes in international examinations[cite: 5]. 
+            Currently building hands-on skills in Amazon Web Services, including Linux, EC2, and Python, through the Per Scholas AWS re/Start program[cite: 6]. 
+            Brings experience in data analysis using Microsoft Excel, SQL, and Power BI, along with foundational knowledge of Microsoft Entra ID and identity and access management[cite: 7]. 
+            Known as a reliable team contributor with strong communication skills and a consistent record of meeting deadlines[cite: 8].
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills [cite: 9]</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud Computing (AWS) [cite: 12]</h3>
+                <ul>
+                    <li>AWS CLI, Systems Manager [cite: 12]</li>
+                    <li>S3 Static Web Hosting [cite: 12]</li>
+                    <li>EC2, VPC, Scale & Load Balancing [cite: 12]</li>
+                    <li>Lambda, Redshift, DynamoDB [cite: 19]</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Networking & Security [cite: 13]</h3>
+                <ul>
+                    <li>VPC, Subnets, Internet Gateways [cite: 13]</li>
+                    <li>Security Groups & NACL [cite: 13]</li>
+                    <li>Network Firewall [cite: 19]</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Linux & Systems [cite: 14]</h3>
+                <ul>
+                    <li>Shell Scripting & CLI [cite: 14]</li>
+                    <li>User, Group & File Permission Management [cite: 14]</li>
+                    <li>Windows & Linux OS [cite: 10]</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Data & Software [cite: 11, 23]</h3>
+                <ul>
+                    <li>SQL & Power BI [cite: 23]</li>
+                    <li>Microsoft Excel (Data Analytics) [cite: 23]</li>
+                    <li>Microsoft Office & Google Suite [cite: 11]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Professional Experience [cite: 24]</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Residential Counselor [cite: 25]</span>
+                <span class="date">June 2025 – Present [cite: 25]</span>
+            </div>
+            <div class="company">Community Resource for Justice | Milford, MA [cite: 25]</div>
+            <ul>
+                <li>Support 4 to 6 clients per shift by ensuring consistent attendance to appointments and daily routines[cite: 26].</li>
+                <li>Reinforce life skills and positive decision-making to improve client engagement and stability[cite: 27].</li>
+                <li>Monitor behavior and adhere to program guidelines to maintain a safe and structured environment[cite: 28].</li>
+                <li>Introduced structured activities contributing to an estimated 60% reduction in behavioral incidents[cite: 29].</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Math Teacher [cite: 31]</span>
+                <span class="date">June 2016 – March 2023 [cite: 31]</span>
+            </div>
+            <div class="company">Abdulrahman Kanoo Int School | Manama, Bahrain [cite: 31]</div>
+            <ul>
+                <li>Prepared 21st-century lesson plans aligned with curriculum and school initiatives[cite: 32, 33].</li>
+                <li>Communicated regularly with guardians to track and record student progress[cite: 34].</li>
+                <li>Ensured above-average learning outcomes through clear and engaging instruction[cite: 35].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="impact">
+        <h2>Impact Statement [cite: 36]</h2>
+        <div class="impact-box">
+            <ul>
+                <li><strong>95% Pass Rate:</strong> Achieved in Mathematics for International exams through a vigorous preparation strategy[cite: 37].</li>
+                <li><strong>90% Engagement:</strong> Result of collaborating on a well-structured curriculum[cite: 38].</li>
+                <li><strong>60% Behavioral Drop:</strong> Achieved through the introduction of outdoor activities for clients[cite: 39].</li>
+                <li><strong>Health Improvement:</strong> Significant results from enforcing strict daily activity routines[cite: 40].</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education [cite: 15]</h2>
+        <div class="edu">
+            <div class="edu-header">
+                <span class="job-title">AWS re/Start Training [cite: 16]</span>
+                <span class="date">March 2026 [cite: 16]</span>
+            </div>
+            <div class="company">Per Scholas | Massachusetts [cite: 16]</div>
+            <p>15-week immersive program covering Cloud Computing, Networking, Databases, and Python[cite: 17, 19].</p>
+        </div>
+        <div class="edu">
+            <div class="edu-header">
+                <span class="job-title">Data Analytics Program [cite: 20]</span>
+                <span class="date">December 2023 [cite: 21]</span>
+            </div>
+            <div class="company">Utiva Learning Platform [cite: 20]</div>
+            <p>12-week program focused on gathering, processing, and visualizing data for business decisions using Excel, SQL, and Power BI[cite: 22, 23].</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Terence Njemfoa. Built with HTML/CSS.
+</footer>
+
+</body>
+</html>
